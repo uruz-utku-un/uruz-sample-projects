@@ -54,7 +54,7 @@ item_1 = CartItem(
     discount=0.1,
 )
 
-print("Ürün Bilgisi:", item_1)  # __str__ sayesinde otomatik bilgi gösterir.
+print("Ürün Bilgileri:", item_1)  # __str__ sayesinde otomatik bilgi gösterir.
 print(f"Ürünlerin Toplam Fiyatı (İndirimsiz)    : {item_1.total_price:.2f}")
 print(f"Ürünlerin Toplam Fiyatı (İndirimli)     : {item_1.discount_price:.2f}")
 item_1.quantity += 1
