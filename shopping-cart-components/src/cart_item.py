@@ -47,20 +47,24 @@ class CartItem:
 
 
 # example use:
-item_1 = CartItem(
-    name="Hero-XPulse 200 4V",
-    price=184574.00,
-    link="https://www.heromotor.com.tr/xpulse200-4v-euro5-plus/",
-    discount=0.1,
-)
+if __name__ == "__main__":
+     # Bu blok yalnızca dosya doğrudan çalıştırıldığında çalışır.
+    # Başka modüller bu sınıfı import etse bile buradaki kodlar çalışmaz.
 
-print("Ürün Bilgileri:", item_1)  # __str__ sayesinde otomatik bilgi gösterir.
-print(f"Ürünlerin Toplam Fiyatı (İndirimsiz)    : {item_1.total_price:.2f}")
-print(f"Ürünlerin Toplam Fiyatı (İndirimli)     : {item_1.discount_price:.2f}")
-item_1.quantity += 1
-print(f"Aynı üründen 1 adet daha eklendi.")
-print(f"Ürünlerin Toplam Fiyatı (İndirimsiz)    : {item_1.total_price:.2f}")
-print(f"Ürünlerin Toplam Fiyatı (İndirimli)     : {item_1.discount_price:.2f}")
+    item_1 = CartItem(
+        name="Hero-XPulse 200 4V",
+        price=184574.00,
+        link="https://www.heromotor.com.tr/xpulse200-4v-euro5-plus/",
+        discount=0.1,
+    )
+
+    print("Ürün Bilgileri:", item_1)  # __str__ sayesinde otomatik bilgi gösterir.
+    print(f"Ürünlerin Toplam Fiyatı (İndirimsiz)    : {item_1.total_price:.2f}")
+    print(f"Ürünlerin Toplam Fiyatı (İndirimli)     : {item_1.discount_price:.2f}")
+    item_1.quantity += 1
+    print(f"Aynı üründen 1 adet daha eklendi.")
+    print(f"Ürünlerin Toplam Fiyatı (İndirimsiz)    : {item_1.total_price:.2f}")
+    print(f"Ürünlerin Toplam Fiyatı (İndirimli)     : {item_1.discount_price:.2f}")
 
 
 # output:
