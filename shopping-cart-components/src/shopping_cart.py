@@ -18,6 +18,8 @@ class ShoppingCart:
     """
     Bir e-ticaret uyuglamasında sepeti temsil eder.
     """
+
+
     def __init__(self, item_list: list[CartItem] | None = None) -> None:
         """
         ShoppingCart nesnesi oluşturur.
@@ -101,6 +103,9 @@ class ShoppingCart:
     def total_price(self) -> float:
         """
         Sepetteki ürünlerin indirimsiz toplam fiyatını döndürür.
+
+        Returns:
+            float: İndirimsiz toplam fiyat.
         """
         return sum(item.total_price for item in self.item_list)
 
@@ -109,5 +114,8 @@ class ShoppingCart:
     def discount_total_price(self) -> float:
         """
         Sepetteki ürünlerin indirim uygulanmış toplam fiyatını döndürür.
+
+        Returns:
+            float: İndirimli toplam fiyat.
         """
         return sum(item.discount_price for item in self.item_list)
