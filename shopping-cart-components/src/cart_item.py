@@ -32,7 +32,7 @@ class CartItem:
     @property
     def total_price(self) -> float:
         """
-        İndirimsiz toplam fiyatı döndürür.
+        İndirimsiz toplam fiyatı döndürür (miktar bazlı).
         """
         return self.price * self.quantity
 
@@ -40,7 +40,7 @@ class CartItem:
     @property
     def discount_price(self) -> float:
         """
-        İndirim uygulanmış toplam fiyatı döndürür.
+        İndirim uygulanmış toplam fiyatı döndürür (miktar bazlı).
         """
         discount_amount = self.price * self.discount
         return self.total_price - discount_amount
