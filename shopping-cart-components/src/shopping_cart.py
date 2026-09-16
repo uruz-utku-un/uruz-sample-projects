@@ -1,71 +1,113 @@
-from cart_item import CartItem 
+# Notlar:
+# @property Python’da bir özellik (property) tanımlamak için kullanılan
+# bir dekoratördür.
+# Normalde bir sınıf metodunu çağırmak için () kullanırsın,
+# ama @property sayesinde o metod bir nitelik (attribute) gibi davranır.
+
+
+from enum import Enum
+from .cart_item import CartItem
+
+
+class UpdateAmountAction(Enum):
+    INCREASE = "increase"
+    DECREASE = "decrease"
 
 
 class ShoppingCart:
     """
+    Bir e-ticaret uyuglamasında sepeti temsil eder.
     """
-    def __init__(self, item_list: list[CartItem] = []):
-        self.item_list = item_list
+    def __init__(self, item_list: list[CartItem] | None = None) -> None:
+        """
+        ShoppingCart nesnesi oluşturur.
+
+        Args:
+            item_list (list[CartItem] | None): Başlangıçta sepete eklenecek
+            ürünler.
+        """
+        self.item_list = item_list or []
 
 
     def __str__(self) -> str:
         """
         Sepetteki tüm ürünlerin bilgilerini okunabilir biçimde döndürür.
+
+        Returns:
+            str: Sepetteki ürünlerin string temsili.
         """
         # Her öğe için string üret, sonra join ile birleştir.
         return "\n".join(item.__str__() for item in self.item_list)
 
 
-    def add_item(self) -> None:
-        pass
+    def add_item(self, new_item: CartItem) -> None:
+        """
+        Ürün sepette zaten varsa miktarını artırır, yoksa sepete ekler.
+
+        Args:
+            new_item (CartItem): Sepete eklenecek ürün.
+        """
+        # ürün zaten sepette mevcutsa:
+        for item in self.item_list:
+            # ürün adı üzerinden kontrol (ileride id kullanılabilir.)
+            if item.name == new_item.name:
+                item.quantity += new_item.quantity
+                return
+
+        # ürün sepette mevcut değilse:
+        self.item_list.append(new_item)
 
 
-    def remove_item(self) -> None:
-        pass
+    def remove_item(self, remove_item: CartItem) -> None:
+        """
+        Ürünü sepetten çıkarır.
+
+        Args:
+            remove_item (CartItem): Sepetten çıkarılacak ürün.
+        """
+        # Listeyei yeniden oluştur, kaldırılacak ürünü listeye dahil etme.
+        self.item_list = [
+            item for item in self.item_list if item != remove_item
+        ]
 
 
-    def update_item_amount(self) -> None:
-        pass
+    def update_item_amount(
+            self,
+            target_item: CartItem,
+            action: UpdateAmountAction
+    ) -> None:
+        """
+        Sepetteki ürün miktarını 1 birim artırır veya azaltır.
+
+        Args:
+            target_item (CartItem): Güncellenecek ürün.
+            action (UpdateAmountAction): INCREASE veya DECREASE.
+
+        Raises:
+            ValueError: Ürün sepette yoksa.
+        """
+        for item in self.item_list:
+            if item.name == target_item.name:
+                if action == UpdateAmountAction.INCREASE:
+                    item.quantity = max(100, item.quantity + 1)
+                elif action == UpdateAmountAction.DECREASE:
+                    item.quantity = max(0, item.quantity - 1)
+                return
+
+        raise ValueError(f"{target_item.name} sepette bulunamadı.")
 
 
+    @property
     def total_price(self) -> float:
-        pass
+        """
+        Sepetteki ürünlerin indirimsiz toplam fiyatını döndürür.
+        """
+        return sum(item.total_price for item in self.item_list)
 
 
+    @property
     def discount_total_price(self) -> float:
-        pass
-
-
-# example use:
-if __name__ == "__main__":
-     # Bu blok yalnızca dosya doğrudan çalıştırıldığında çalışır.
-    # Başka modüller bu sınıfı import etse bile buradaki kodlar çalışmaz.
-
-    item_1 = CartItem(
-        name="Hero-XPulse 200 4V",
-        price=184574.00,
-        link="https://www.heromotor.com.tr/xpulse200-4v-euro5-plus/",
-        discount=0.1,
-    )
-    item_2 = CartItem(
-        name="TVS-Raider 125",
-        price=149400.00,
-        link="https://turkiye.tvsmotor.com/tr/p/our-products/tvs-raider-tr",
-        discount=0.15,
-    )
-    item_3 = CartItem(
-        name="RKS-Racing R 250",
-        price=205000.00,
-        link="https://www.heromotor.com.tr/xpulse200-4v-euro5-plus/",
-        discount=0.2,
-    )
-
-    item_4 = CartItem(
-        name="QJMotor-SRK 250 RC",
-        price=180000.00,
-        link="https://www.heromotor.com.tr/xpulse200-4v-euro5-plus/",
-        discount=0.2,
-    )
-
-    shopping_cart = ShoppingCart([item_1, item_2, item_3])
-    print("\nSpetteki Ürünlerin Bilgileri:", shopping_cart)
+        """
+        Sepetteki ürünlerin indirim uygulanmış toplam fiyatını döndürür.
+        """
+        return sum(item.discount_price for item in self.item_list)
