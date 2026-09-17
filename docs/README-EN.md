@@ -1,0 +1,41 @@
+# Uruz - Sample Projects
+
+**This repository**  
+was created to document **sample projects** prepared during my education and
+professional development journey.  
+Each project is presented in a separate folder with **source code, usage**
+**examples, and documentation**.
+
+**Purpose:**
+- Share my skills in an organized and accessible way  
+- Demonstrate progress in my career development  
+- Record my learning process with concrete examples  
+
+**Content:**  
+The projects in this repository consist of applications derived from
+various courses, written documents, and personal experiments.  
+Each project serves as an example reflecting my software development and
+documentation skills.
+
+---
+
+## License
+This repository belongs to me and all rights are reserved.  
+**It may not be used for commercial purposes or redistribution.**
+
+---
+
+## Sample Projects
+
+### E-Commerce
+- **[2026.09.15]** - [Shopping Cart Components](./shopping-cart/)
+  + A simple shopping cart module:
+    - Adding and removing products
+    - Increasing/decreasing product quantities
+    - Calculating totals with and without discounts  
+  
+  + A simple cart item module:
+    - Attributes such as product name, price, discount rate,
+      quantity in the cart, and product link
+    - Methods for calculating total price with and without discounts
+      based on quantity
