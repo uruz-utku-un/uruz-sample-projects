@@ -14,8 +14,8 @@ Her proje, ayrı bir klasör altında
 
 **İçerik:**
 \
-Depoda yer alan projeler, çeşitli kurslardan ve kişisel denemelerden
-elde edilen uygulamalardan oluşmaktadır.  
+Depoda yer alan projeler, çeşitli kurslardan, yazılı dökümanlardan ve
+kişisel denemelerden elde edilen uygulamalardan oluşmaktadır.  
 Her proje, yazılım geliştirme ve dokümantasyon becerilerimi yansıtan bir
 örnek niteliği taşır.
 
