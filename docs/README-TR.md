@@ -1,21 +1,20 @@
 # Uruz - Örnek Projeler
 
-**Bu depo,** eğitim ve mesleki gelişim sürecimde hazırladığım
+**Bu depo,**
+\
+eğitim ve mesleki gelişim sürecimde hazırladığım
 **örnek projeleri** belgelendirmek amacıyla oluşturulmuştur.  
 Her proje, ayrı bir klasör altında
 **kaynak kodları, kullanım örnekleri ve belgeleriyle** sunulmaktadır.
 
----
-
-## Amaç
+**Amaç:**
 - Yetkinliklerimi düzenli ve erişilebilir şekilde paylaşmak  
 - Kariyer gelişimimdeki ilerlemeyi göstermek  
 - Öğrenme sürecimi somut örneklerle belgelemek  
 
----
-
-## İçerik
-Depoda yer alan projeler, çeşitli kurslardan ve kişisel denemelerden
+**İçerik**
+\
+(depoda yer alan projeler), çeşitli kurslardan ve kişisel denemelerden
 elde edilen uygulamalardan oluşmaktadır.  
 Her proje, yazılım geliştirme ve dokümantasyon becerilerimi yansıtan bir
 örnek niteliği taşır.
