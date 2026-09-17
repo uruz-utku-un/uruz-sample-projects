@@ -12,9 +12,9 @@ Her proje, ayrı bir klasör altında
 - Kariyer gelişimimdeki ilerlemeyi göstermek  
 - Öğrenme sürecimi somut örneklerle belgelemek  
 
-**İçerik**
+**İçerik:**
 \
-(depoda yer alan projeler), çeşitli kurslardan ve kişisel denemelerden
+Depoda yer alan projeler, çeşitli kurslardan ve kişisel denemelerden
 elde edilen uygulamalardan oluşmaktadır.  
 Her proje, yazılım geliştirme ve dokümantasyon becerilerimi yansıtan bir
 örnek niteliği taşır.
