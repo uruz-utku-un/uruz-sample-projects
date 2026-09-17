@@ -53,7 +53,7 @@ class ShoppingCart:
         for item in self.item_list:
             # ürün adı üzerinden kontrol (ileride id kullanılabilir.)
             if item.name == new_item.name:
-                item.quantity += new_item.quantity
+                item.quantity += 1
                 return
 
         # ürün sepette mevcut değilse:
