@@ -22,8 +22,7 @@ Her proje, yazılım geliştirme ve dokümantasyon becerilerimi yansıtan bir
 ---
 
 ## Lisans
-Bu depo tarafıma aittir ve tüm hakları bana aittir.  
-**Ticari veya yeniden dağıtım amaçlı kullanılamaz.**
+**Bu depo [Creative Commons BY-NC 4.0](../LICENSE.md) ile lisanslanmıştır.**
 
 ---
 
