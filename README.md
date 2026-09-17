@@ -11,9 +11,9 @@ Each project is presented in a separate folder with **source code, usage**
 - Demonstrate progress in my career development  
 - Record my learning process with concrete examples  
 
-**Content**  
-The projects in this repository consist of applications derived from various
-courses and personal experiments.  
+**Content:**  
+The projects in this repository consist of applications derived from
+various courses, written documents, and personal experiments.  
 Each project serves as an example reflecting my software development and
 documentation skills.
 
