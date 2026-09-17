@@ -1,7 +1,12 @@
 from src import CartItem, ShoppingCart, UpdateAmountAction
 
 
-print("\nEXAMPLE CART ITEMS\n----------")
+pattern = "\n" + 79*"-" 
+
+
+print(pattern)
+print("\nEXAMPLE CART ITEMS")
+print(pattern)
 
 item_1 = CartItem(
     name="Hero-XPulse 200 4V",
@@ -32,8 +37,11 @@ item_list = [item_1, item_2, item_3, item_4]
 print("Ürünler:", "\n".join(str(item) for item in item_list))
 
 ### output ###
+# -----------------------------------------------------------------------------
+#
 # EXAMPLE CART ITEMS
-# ----------
+#
+# -----------------------------------------------------------------------------
 # Products: 
 # - Hero-XPulse 200 4V
 # - 184574.00 TL
@@ -60,15 +68,20 @@ print("Ürünler:", "\n".join(str(item) for item in item_list))
 # - https://tr.qjmotor.com/products_details/69.html
 
 
-print("\nEXAMPLE: CART ITEM\n----------")
+print(pattern)
+print("\nEXAMPLE: CART ITEM")
+print(pattern)
 
 print("Ürün Bilgileri:", item_1, "\n")  # __str__ sayesinde otomatik bilgi gösterir.
 print(f"Ürünlerin Toplam Fiyatı (İndirimsiz)    : {item_1.total_price:.2f}")
 print(f"Ürünlerin Toplam Fiyatı (İndirimli)     : {item_1.discount_price:.2f}")
 
 ### output ###
+# -----------------------------------------------------------------------------
+#
 # EXAMPLE: CART ITEM
-# ----------
+#
+# -----------------------------------------------------------------------------
 # Product Informations: 
 # - Hero-XPulse 200 4V
 # - 184574.00 TL
@@ -83,49 +96,58 @@ print(f"Ürünlerin Toplam Fiyatı (İndirimli)     : {item_1.discount_price:.2f
 # Total Price of Products (Discounted)          : 369148.00
 
 
-print("\nEXAMPLE: SHOPPING CART\n----------")
+print(pattern)
+print("\nEXAMPLE: SHOPPING CART")
+print(pattern)
 
 shopping_cart = ShoppingCart(item_list)
 print("Spetteki Ürünlerin Bilgileri:", shopping_cart, "\n")
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : {shopping_cart.total_price:.2f}")
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.discount_total_price:.2f}")
 
+print(pattern)
 shopping_cart.remove_item(item_4)
 print("\n4. Ürün (QJMotor-SRK 250 RC) sepetten Çıkarıldı.\n")
 print("Spetteki Ürünlerin Bilgileri:", shopping_cart, "\n")
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : {shopping_cart.total_price:.2f}")
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.discount_total_price:.2f}")
 
+print(pattern)
 shopping_cart.remove_item(item_2)
 print("\n2. Ürün (TVS-Raider 125) sepetten Çıkarıldı.\n")
 print("Spetteki Ürünlerin Bilgileri:", shopping_cart, "\n")
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : {shopping_cart.total_price:.2f}")
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.discount_total_price:.2f}")
 
+print(pattern)
 shopping_cart.remove_item(item_3)
 print("\n3. Ürün (RKS-Racing R 250) sepetten Çıkarıldı.\n")
 print("Spetteki Ürünlerin Bilgileri:", shopping_cart, "\n")
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : {shopping_cart.total_price:.2f}")
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.discount_total_price:.2f}")
 
+print(pattern)
 shopping_cart.add_item(item_1)
 print("\n1. Ürün (Hero-XPulse 200 4V) sepete eklendi.\n")
 print("Spetteki Ürünlerin Bilgileri:", shopping_cart, "\n")
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : {shopping_cart.total_price:.2f}")
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.discount_total_price:.2f}")
 
+print(pattern)
 shopping_cart.add_item(item_1)
 print("\n1. Ürün (Hero-XPulse 200 4V) sepete eklendi.\n")
 print("Spetteki Ürünlerin Bilgileri:", shopping_cart, "\n")
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : {shopping_cart.total_price:.2f}")
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.discount_total_price:.2f}")
 
+print(pattern)
 shopping_cart.update_item_amount(item_1, UpdateAmountAction.INCREASE)
 print("\n1. Ürün (Hero-XPulse 200 4V) adedi 1 artırıldı.\n")
 print("Spetteki Ürünlerin Bilgileri:", shopping_cart, "\n")
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : {shopping_cart.total_price:.2f}")
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.discount_total_price:.2f}")
 
+print(pattern)
 shopping_cart.update_item_amount(item_1, UpdateAmountAction.DECREASE)
 shopping_cart.update_item_amount(item_1, UpdateAmountAction.DECREASE)
 shopping_cart.update_item_amount(item_1, UpdateAmountAction.DECREASE)
@@ -135,6 +157,7 @@ print("Spetteki Ürünlerin Bilgileri:", shopping_cart, "\n")
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : {shopping_cart.total_price:.2f}")
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.discount_total_price:.2f}")
 
+print(pattern)
 shopping_cart.add_item(item_3)
 print("\n3. Ürün (RKS-Racing R 250) sepete eklendi.\n")
 print("Spetteki Ürünlerin Bilgileri:", shopping_cart, "\n")
@@ -142,8 +165,11 @@ print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : {shopping_cart.tot
 print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.discount_total_price:.2f}")
 
 ### output ###
+# -----------------------------------------------------------------------------
+#
 # EXAMPLE: SHOPPING CART
-# ----------
+#
+# -----------------------------------------------------------------------------
 # Spetteki Ürünlerin Bilgileri: 
 # - Hero-XPulse 200 4V
 # - 184574.00 TL
@@ -172,6 +198,8 @@ print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.dis
 # Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : 718974.00
 # Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : 637284.00
 # 
+# -----------------------------------------------------------------------------
+#
 # 4. Ürün (QJMotor-SRK 250 RC) sepetten Çıkarıldı.
 #
 # Spetteki Ürünlerin Bilgileri: 
@@ -195,6 +223,8 @@ print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.dis
 # 
 # Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : 538974.00
 # Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : 493284.00
+#
+# -----------------------------------------------------------------------------
 # 
 # 2. Ürün (TVS-Raider 125) sepetten Çıkarıldı.
 # 
@@ -213,6 +243,8 @@ print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.dis
 #
 # Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : 389574.00
 # Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : 358824.00
+#
+# -----------------------------------------------------------------------------
 # 
 # 3. Ürün (RKS-Racing R 250) sepetten Çıkarıldı.
 # 
@@ -225,6 +257,8 @@ print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.dis
 #
 # Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : 184574.00
 # Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : 184574.00
+#
+# -----------------------------------------------------------------------------
 # 
 # 1. Ürün (Hero-XPulse 200 4V) sepete eklendi.
 # 
@@ -237,9 +271,11 @@ print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.dis
 #
 # Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : 369148.00
 # Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : 369148.00
-
+#
+# -----------------------------------------------------------------------------
+#
 # 1. Ürün (Hero-XPulse 200 4V) sepete eklendi.
-
+#
 # Spetteki Ürünlerin Bilgileri: 
 # - Hero-XPulse 200 4V
 # - 184574.00 TL
@@ -249,6 +285,8 @@ print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.dis
 #
 # Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : 553722.00
 # Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : 553722.00
+#
+# -----------------------------------------------------------------------------
 #
 # 1. Ürün (Hero-XPulse 200 4V) adedi 1 artırıldı.
 # 
@@ -262,6 +300,8 @@ print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.dis
 # Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : 738296.00
 # Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : 738296.00
 #
+# -----------------------------------------------------------------------------
+#
 # 1. Ürün (Hero-XPulse 200 4V) adedi 4 azaltıldıdı.
 # 
 # Spetteki Ürünlerin Bilgileri: 
@@ -273,7 +313,9 @@ print(f"Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : {shopping_cart.dis
 #
 # Sepetteki Ürünlerin Toplam Fiyatı (İndirimsiz)  : 0.00
 # Sepetteki Ürünlerin Toplam Fiyatı (İndirimli)   : 0.00
-# 
+#
+# -----------------------------------------------------------------------------
+#
 # 3. Ürün (RKS-Racing R 250) sepete eklendi.
 # 
 # Spetteki Ürünlerin Bilgileri: 
