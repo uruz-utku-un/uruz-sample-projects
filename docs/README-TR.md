@@ -30,6 +30,6 @@ Bu depo tarafıma aittir ve tüm hakları bana aittir.
 ## Örnek Projeler
 
 ### E-Ticaret
-- **[2026.09.15]** - [Shopping Cart Components](./shopping-cart/)  
+- [**2026.09.15**] - [Shopping Cart Components](./shopping-cart/)  
   Basit bir alışveriş sepeti modülü: ürün ekleme, çıkarma, adet güncelleme ve
   indirim hesaplama örnekleri içerir.
