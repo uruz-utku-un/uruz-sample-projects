@@ -26,7 +26,7 @@ This repository belongs to me and all rights are reserved.
 ---
 
 ## Links
-Use the links to view the certificates.
+Use the links to view the sample projects.
 
 - [**EN**] - [Click here for English document.](./docs/README-EN.md)
 - [**TR**] - [Türkçe belge için buraya tıklayın.](./docs/README-TR.md)
