@@ -31,5 +31,13 @@ Bu depo tarafıma aittir ve tüm hakları bana aittir.
 
 ### E-Ticaret
 - **[2026.09.15]** - [Shopping Cart Components](./shopping-cart/)  
-  Basit bir alışveriş sepeti modülü: ürün ekleme, çıkarma, adet güncelleme ve
-  indirim hesaplama örnekleri içerir.
+  + Basit bir alışveriş sepeti modülü:
+    - Ürün ekleme ve çıkarma
+    - Ürün adetlerini artırma/azaltma
+    - İndirimsiz ve indirimli toplam fiyat hesaplama  
+  
+  + Basit bir sepet ürünü modülü:
+    - Ürün adı, fiyat, indirim oranı, septteki miktarı ve ürün linki gibi
+        nitelikler
+    - Adet sayısına göre indirimsiz ve indirimli toplam fiyat hesaplama
+        yöntemleri
