@@ -21,7 +21,7 @@ documentation skills.
 
 ## License
 **This repository is licensed under**
-**[Creative Commons BY-NC 4.0](./LICENSE.md).**
+**[Creative Commons BY-NC 4.0](../LICENSE.md).**
 
 ---
 
