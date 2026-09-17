@@ -1,3 +1,6 @@
+# created 2026-09-15, by Utku Ün (Uruz)
+
+
 # Notlar:
 # @property Python’da bir özellik (property) tanımlamak için kullanılan
 # bir dekoratördür.
