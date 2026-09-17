@@ -20,8 +20,9 @@ documentation skills.
 ---
 
 ## License
-This repository belongs to me and all rights are reserved.  
-**It may not be used for commercial purposes or redistribution.**
+## License
+**This repository is licensed under**
+**[Creative Commons BY-NC 4.0](./LICENSE.md).**
 
 ---
 
