@@ -29,13 +29,3 @@ documentation skills.
 
 ### E-Commerce
 - **[2026.09.15]** - [Shopping Cart Components](./shopping-cart/)
-  + A simple shopping cart module:
-    - Adding and removing products
-    - Increasing/decreasing product quantities
-    - Calculating totals with and without discounts  
-  
-  + A simple cart item module:
-    - Attributes such as product name, price, discount rate,
-      quantity in the cart, and product link
-    - Methods for calculating total price with and without discounts
-      based on quantity
