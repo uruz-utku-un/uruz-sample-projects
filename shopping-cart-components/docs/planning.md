@@ -1,5 +1,18 @@
-# Uruz Alışveriş Sepeti Bileşeni - Gereksinimlerin Tanımı Belgesi
+# Alışveriş Sepeti Bileşenleri - Gereksinimlerin Tanımlanması
+\
+**Belgenin Ortaya Çıkış Tarihi:**
+2026-09-18
+\
+**Belge Sürümü:**
+V1.0
+\
+**Belgeyi Oluşturanlar:**
+Utku Ün (Uruz)
+\
+**Belgeyi Çevirenler:**
+Bu belge, orijinal dilinde (yazarın ana dilinde) sunulmuştur.
 
+---
 
 Bir alışveriş sepeti üç temel parçadan oluşur:
 - **Ürünler** (sepet listesindeki öğeler)
