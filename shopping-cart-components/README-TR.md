@@ -92,7 +92,7 @@ Bu proje, **[ana depo README](../README.md)** üzerinden yönlendirilmiştir ve 
 
 ---
 
-## Demo: Shopping Kart
+## Demo: Shopping Cart
 
 > Örnek Ürün - 1:
 - Hero-XPulse 200 4V
