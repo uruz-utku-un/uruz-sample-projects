@@ -28,4 +28,4 @@ documentation skills.
 ## Sample Projects
 
 ### E-Commerce
-- **[2026.09.15]** - [Shopping Cart Components](./shopping-cart/)
+- **[2026.09.15]** - [Shopping Cart Components](../shopping-cart-components/)
