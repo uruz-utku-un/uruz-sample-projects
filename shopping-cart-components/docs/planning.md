@@ -1,7 +1,7 @@
 # Alışveriş Sepeti Bileşenleri - Gereksinimlerin Tanımlanması
 \
 **Belgenin Ortaya Çıkış Tarihi:**
-2026-09-18
+2026-09-15
 \
 **Belge Sürümü:**
 V1.0
