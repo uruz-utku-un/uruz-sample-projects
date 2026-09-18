@@ -29,7 +29,7 @@ Her proje, yazılım geliştirme ve dokümantasyon becerilerimi yansıtan bir
 ## Örnek Projeler
 
 ### E-Ticaret
-- **[2026.09.15]** - [Shopping Cart Components](./shopping-cart/)  
+- **[2026.09.15]** - [Shopping Cart Components](../shopping-cart-components/)  
   + Basit bir alışveriş sepeti modülü:
     - Ürün ekleme ve çıkarma
     - Ürün adetlerini artırma/azaltma
